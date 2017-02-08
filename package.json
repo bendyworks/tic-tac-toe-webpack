@@ -1,5 +1,5 @@
 {
-  "name": "webpack2",
+  "name": "demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,6 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "github:webpack-contrib/extract-text-webpack-plugin",
     "style-loader": "^0.13.1",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.3.0"

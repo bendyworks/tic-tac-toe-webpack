@@ -18,7 +18,11 @@ class XOBoard {
   }
 
   reset() {
-    this.board = [[0,0,0],[0,0,0],[0,0,0]];
+    this.board = [
+      [0, 0, 0],
+      [0, 0, 0],
+      [0, 0, 0]
+    ];
     this.eachCell((value, row, col) => {
       $('#cell-' + row + '-' + col).html('').attr('disabled', false);
     });
@@ -38,11 +42,11 @@ class XOBoard {
 
   isWinner(row, col, player) {
     var num,
-    rowWin = true,
-    columnWin = true,
-    forwardDiagonalWin = true,
-    backwardDiagonalWin = true,
-    onDiagonal = (row === col) || (col == -1 * row + 2);
+      rowWin = true,
+      columnWin = true,
+      forwardDiagonalWin = true,
+      backwardDiagonalWin = true,
+      onDiagonal = (row === col) || (col == -1 * row + 2);
 
     // check for row and column wins
     for (num = 0; num < 3; num++) {

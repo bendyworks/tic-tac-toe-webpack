@@ -4,7 +4,7 @@ class Player {
   constructor(name) {
     id++;
     this.id = id;
-    this.name = (name && name.length > 0)? name : "Player " + id;
+    this.name = (name && name.length > 0) ? name : "Player " + id;
     this.$el = $('.player-' + this.id);
     this.$el.find('.name').html(this.name);
     this._wins = 0;

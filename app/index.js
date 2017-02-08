@@ -58,10 +58,10 @@ $(function () {
 
   // grab jQuery collections
   $modalOverlay = $("#overlay");
-  $modalPrompt  = $("#modal .prompt");
-  $modalInput   = $("#modal input");
-  $modalButton  = $("#modal button");
-  $notice       = $("#instructions span");
+  $modalPrompt = $("#modal .prompt");
+  $modalInput = $("#modal input");
+  $modalButton = $("#modal button");
+  $notice = $("#instructions span");
 
   // setup players
   promptUser("Enter a name for player one:", function (name) {

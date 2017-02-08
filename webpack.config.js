@@ -26,5 +26,10 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin("styles.css"),
-  ]
+  ],
+  resolve: {
+    alias: {
+      jquery: "jquery/src/jquery"
+    }
+  }
 };

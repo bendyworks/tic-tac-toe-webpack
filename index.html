@@ -6,7 +6,36 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class='carbon'>
-  <h1>Demo</h1>
+  <div class="score-board player-1 blue-box"><span class="name">Player 1</span>: <span class="score">0</span></div>
+  <div class="score-board player-2 blue-box"><span class="name">Player 2</span>: <span class="score">0</span></div>
+  <div id="instructions"><span class="blue-box"></span></div>
+  <div id="game-board">
+    <div class="row">
+      <button id="cell-0-0" class="btn"></button>
+      <button id="cell-0-1" class="btn"></button>
+      <button id="cell-0-2" class="btn"></button>
+    </div>
+    <div class="row">
+      <button id="cell-1-0" class="btn"></button>
+      <button id="cell-1-1" class="btn"></button>
+      <button id="cell-1-2" class="btn"></button>
+    </div>
+    <div class="row">
+      <button id="cell-2-0" class="btn"></button>
+      <button id="cell-2-1" class="btn"></button>
+      <button id="cell-2-2" class="btn"></button>
+    </div>
+  </div>
+  <div id="bottom">
+    <button id="reset">Reset</button>
+  </div>
+  <div id="overlay">
+    <div id="modal" class="carbon">
+      <div class="prompt">Enter your name:</div>
+      <input type="text">
+      <button>Submit</button>
+    </div>
+  </div>
   <script src="bundle.js"></script>
 </body>
 </html>

@@ -1,4 +1,5 @@
 var path = require('path');
+var webpack = require('webpack');
 
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
@@ -6,7 +7,8 @@ module.exports = {
   entry: './app/index.js',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'build')
+    path: path.resolve(__dirname, 'build'),
+    publicPath: "build/"
   },
   module: {
     rules: [
@@ -26,6 +28,10 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin("styles.css"),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    })
   ],
   resolve: {
     alias: {
